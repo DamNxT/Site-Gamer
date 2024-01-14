@@ -1,0 +1,392 @@
+:root{
+    --header-bg:rgba(0, 0, 0, 0.7);
+    --primary-color:#f3f1f1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;        
+}
+.img-bg{
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    width: 100%;    
+    z-index: -10;
+    top: 0;
+    max-height: 100vh;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;    
+    background-color: var(--header-bg);
+    padding: 20px 0;    
+}
+.menu a{
+    color: var(--primary-color);       
+    font-weight:600;
+    font-size: 25px;
+    text-decoration: none;
+}
+.main{
+    position: relative;
+    width: 100%;
+    max-height: 865px;
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+}
+.title{    
+    font-size: 70px;               
+    color: rgb(185, 175, 34) ;
+    text-shadow: 2px 5px 2px rgb(47, 10, 71);  
+    letter-spacing: 20px;         
+}
+.arrow-down {
+    position: relative;
+    top: 280px;
+    display: inline-block;    
+    margin-top: 30px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #e6d327;    
+  }
+.a1{    
+    top: -27px;
+}
+.arrow-down:hover{    
+    cursor: pointer;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 24px solid #e6d327;
+    transition: 0.2s;
+}
+.content{
+    background: linear-gradient(to bottom, rgb(64, 14, 129)25%, rgb(41, 19, 104)55%, rgb(78, 44, 87)100%);
+    color: var(--primary-color);    
+    text-align: center;
+    height: 100%;
+}
+.content h2{
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.secao1{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;    
+    gap: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
+article{
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;    
+    box-shadow: 0 0 10px rgba(0,0 ,0 ,.2 );
+    padding: 0 20px;
+    margin-bottom: 20px;
+    width: 25%;
+    height: 55%;    
+}
+.title-card{
+    margin: 20px 0;
+}
+.logo1{
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 5px;    
+}
+.texto-card{
+    font-size: 20px;    
+    padding: 20px 0;
+}
+.informacoes{
+    display: flex;
+    justify-content: space-evenly;    
+    background-color: black;
+    padding: 20px 0;  
+    color: var(--primary-color);
+}
+
+@media (max-width: 375px){
+    body{
+        width: 100%;
+    }
+    .menu a{
+        font-size: 12px;
+    }
+    .main{
+        position: relative;
+        height: 300px;        
+    }
+    .img-bg{
+        object-fit: cover;     
+        object-position: center; 
+        height: 400px;
+        top: 0;
+    }
+    .title{
+        position: absolute;
+        top:120px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        text-shadow: 1px 2px 1px rgb(47, 10, 71);
+    }
+    .arrow-down{
+        top: 30px;
+        border-top: 10px solid #e6d327;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        transition: 0.5s;
+    }
+    .a1{
+        top: -25px;
+    }
+    .arrow-down:hover{
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 14px solid #e6d327;        
+    }
+    .content h2{
+        font-size: 18px;
+        padding: 30px 0;
+        
+    }
+    .secao1{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    article{
+        width: 90%;
+        height: 370px;
+        padding: 0;        
+    }
+    .logo1{
+        height: 180px;   
+    }   
+    .texto-card{
+        font-size: 11px;        
+        padding: 10px;
+    }
+    .informacoes{
+        font-size: 10px;
+        text-align: center;
+    }
+    .email{
+        font-size: 8px;        
+        margin-right: 10px;
+    }
+}
+@media (min-width: 376px) and (max-width: 475px) {
+    body{
+        width: 100%;
+    }
+    .menu a{
+        font-size: 12px;
+    }
+    .main{
+        position: relative;
+        height: 300px;        
+    }
+    .img-bg{
+        object-fit: cover;     
+        object-position: center; 
+        height: 400px;
+        top: 0;
+    }
+    .title{
+        position: absolute;
+        top:120px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        text-shadow: 1px 2px 1px rgb(47, 10, 71);
+    }
+    .arrow-down{
+        top: 30px;
+        border-top: 10px solid #e6d327;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        transition: 0.5s;
+    }
+    .a1{
+        top: -25px;
+    }
+    .arrow-down:hover{
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 14px solid #e6d327;        
+    }
+    .content h2{
+        font-size: 18px;
+        padding: 30px 0;
+        
+    }
+    .secao1{
+        flex-direction: column;
+        gap: 10px;        
+    }
+    article{
+        width: 90%;
+        height: 470px;
+        padding: 0;        
+    }
+    .logo1{
+        height: 280px;   
+    }   
+    .texto-card{
+        font-size: 11px;        
+        padding: 10px;
+    }
+    .informacoes{
+        font-size: 10px;
+        text-align: center;
+    }
+    .email{
+        font-size: 8px;        
+        margin-right: 10px;
+    }
+}
+@media (min-width: 476px) and (max-width:768px){
+    body{
+        width: 100%;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    .main{
+        position: relative;
+        height: 500px;        
+    }
+    .img-bg{
+        object-fit: cover;     
+        object-position: center; 
+        height: 600px;
+        top: 0;
+    }
+    .title{
+        position: absolute;
+        top:120px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        text-shadow: 1px 2px 1px rgb(47, 10, 71);
+    }
+    .arrow-down{
+        top: 30px;
+        border-top: 10px solid #e6d327;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        transition: 0.5s;
+    }
+    .a1{
+        top: -25px;
+    }
+    .arrow-down:hover{
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 14px solid #e6d327;        
+    }
+    .content h2{
+        font-size: 18px;
+        padding: 30px 0;
+        
+    }
+    .secao1{
+        flex-direction: column;
+        gap: 10px;        
+    }
+    article{
+        width: 90%;
+        height: 570px;
+        padding: 0;        
+    }
+    .logo1{
+        height: 380px;   
+    }   
+    .texto-card{
+        font-size: 11px;        
+        padding: 10px;
+    }
+    .informacoes{
+        font-size: 10px;
+        text-align: center;
+    }
+    .email{
+        font-size: 8px;        
+        margin-right: 10px;
+    }
+}
+@media(min-width:769px) and (max-width:1440px){
+    body{
+        width: 100%;
+    }
+    .menu a{
+        font-size: 22px;
+    }
+    .main{
+        position: relative;
+        height: 700px;        
+    }
+    .img-bg{
+        object-fit: cover;     
+        object-position: center; 
+        height: 800px;
+        top: 0;
+    }
+    .title{
+        position: absolute;
+        top:300px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        text-shadow: 1px 2px 1px rgb(47, 10, 71);
+    }
+    .arrow-down{
+        top: 30px;
+        border-top: 10px solid #e6d327;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        transition: 0.5s;
+    }
+    .a1{
+        top: -25px;
+    }
+    .arrow-down:hover{
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 14px solid #e6d327;        
+    }
+    .content h2{
+        font-size: 18px;
+        padding: 30px 0;        
+    }
+    .secao1{
+        flex-direction: row;
+        gap: 20px;        
+    }
+    article{
+        width: 40%;
+        height: 470px;
+        padding: 0;        
+    }
+    .logo1{
+        height: 280px;   
+    }   
+    .texto-card{
+        font-size: 16px;        
+        padding: 10px;
+    }
+    .informacoes{
+        font-size: 20px;
+        text-align: center;
+    }
+    .email{
+        font-size: 18px;        
+        margin-right: 10px;
+    }
+}
